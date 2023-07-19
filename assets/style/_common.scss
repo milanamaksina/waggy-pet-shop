@@ -1,0 +1,174 @@
+
+.top-header-section{
+  display: flex;
+  align-items: center;
+  padding: 28px 310px;
+}
+
+.product-search-btn{
+  height: 50px;
+  border-radius: 4px;
+}
+
+.product-search-btn::placeholder {
+  font-family: $font-family-montserrat;
+}
+
+.waggy-logo-text{
+  font-family: $font-family-chilanka;
+  font-size: 35px;
+  letter-spacing: 1.05px;
+  text-transform: uppercase;
+}
+
+.shop-logo-text{
+  font-family: $font-family-montserrat;
+  font-size: 15px;
+  letter-spacing: 0.9px;
+  text-transform: capitalize;
+}
+
+.line {
+  border-top: 1px solid $gray-100;
+}
+
+.bottom-header-section{
+  display: flex;
+  align-items: center;
+  padding: 20px 310px;
+  font-family: $font-family-chilanka;
+}
+
+p{
+  margin: 0;
+}
+
+nav{
+  display: flex;
+  gap: 50px;
+  padding-left: 189px;
+  padding-right: 228px;
+}
+
+a {
+  color: $brown-100;
+  text-decoration: none;
+}
+
+.main-section {
+  display: flex;
+  background-color: $beige-100;
+  padding: 31px 310px 67px 247px;
+  gap: 58px;
+}
+
+.dog-img-container {
+  width: 100%;
+  padding-top: 167px;
+}
+
+.ellipse {
+  position: relative;
+  width: 606px;
+  height: 606px;
+  border-radius: 50%;
+  background-color: #F7EEE4;
+  overflow: visible;
+}
+
+.ellipse img {
+  position: absolute;
+  top: -167px; 
+  left: 43px;
+  right: 43px;
+  bottom: 53px;
+  object-fit: cover;
+}
+
+h1{
+  font-size: 88px;
+  font-weight: 400;
+  color: $brown-100;
+  font-family: $font-family-chilanka;
+  letter-spacing: 2.64px;
+  text-transform: capitalize;
+}
+
+.main-section-header{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 191px 0 0 0;
+}
+
+.goods-section{
+  padding: 150px 310px;
+  font-family: $font-family-chilanka;
+}
+
+.category-section{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: auto;
+  row-gap: 16px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family-chilanka;
+}
+
+.category-section p {
+  font-size: 26px;
+}
+
+.category-section img {
+  display: block;
+  margin: 0 auto; 
+}
+
+h2{
+  font-size: 55px;
+  font-weight: 400;
+  letter-spacing: 0.55px;
+  text-transform: capitalize;
+}
+
+.pet-clothing-section{
+  padding-top: 150px;
+}
+
+.goods-header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.shop-btn{
+  display: flex;
+  padding: 28px 50px;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid $brown-100;
+  background-color: white;
+  color: #41403E;
+  font-family: $font-family-chilanka;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+.shop-btn i {
+  padding-left: 6px;
+}
+
+.cards-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.card-header{
+  border-radius: 10px;
+  padding: 0 20px;
+  background: #EEEBE5;
+}

@@ -1,3 +1,8 @@
-@import 'common';
-@import 'fonts';
-@import 'colors';
+@import './colors';
+@import './fonts';
+@import './common';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
