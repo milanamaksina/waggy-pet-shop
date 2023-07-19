@@ -24,7 +24,7 @@ a {
   width: 606px;
   height: 606px;
   border-radius: 50%;
-  background-color: #F7EEE4;
+  background-color: #f7eee4;
   overflow: visible;
 }
 
@@ -54,7 +54,10 @@ h1 {
   padding: 191px 0 0 0;
 }
 
-.goods-section {
+.goods-section,
+.best-selling-section,
+.blog-posts-section,
+.footer {
   padding: 150px 310px;
   font-family: "Chilanka", cursive;
 }
@@ -87,7 +90,9 @@ h2 {
   text-transform: capitalize;
 }
 
-.pet-clothing-section {
+.pet-clothing-section,
+.pet-foodies-section,
+.best-selling-section {
   padding-top: 150px;
 }
 
@@ -98,17 +103,23 @@ h2 {
   padding-bottom: 30px;
 }
 
+.goods-header button {
+  padding: 28px 50px;
+}
+
 .shop-btn {
   display: flex;
-  padding: 28px 50px;
   justify-content: center;
+  vertical-align: middle;
+  align-items: center;
   border-radius: 4px;
   border: 1px solid #41403E;
   background-color: white;
-  color: #41403E;
+  color: #41403e;
   font-family: "Chilanka", cursive;
   font-size: 19px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .shop-btn i {
@@ -125,13 +136,17 @@ h2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+  row-gap: 45px;
 }
 
 .card-header {
   border-radius: 10px;
-  padding: 0 20px;
   height: 283px;
-  background: #EEEBE5;
+  background: #eeebe5;
+}
+
+.dog-card {
+  padding: 0 20px;
 }
 
 .card-header img {
@@ -152,7 +167,178 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
   padding-top: 7px;
+  padding-bottom: 18px;
   color: #DEAD6F;
+}
+
+.add-to-cart-btn {
+  padding: 20px 32px;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.card-buttons i {
+  color: black;
+  padding-left: 0;
+}
+
+.heart-btn {
+  padding: 20px;
+}
+
+.food-card {
+  padding: 40px 60px;
+}
+
+.sale-poster-section {
+  display: flex;
+  flex-direction: row;
+  row-gap: 120px;
+  background-color: #F9F3EC;
+  padding: 37px 269px 27px 420px;
+}
+
+.poster-right-side {
+  padding: 184px 120px 184px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.poster-discount {
+  font-size: 36px;
+  color: #DEAD6F;
+  font-family: "Montserrat", sans-serif;
+}
+
+.poster-sale {
+  font-size: 75px;
+  color: #41403E;
+  font-family: "Chilanka", cursive;
+}
+
+.poster-right-side button {
+  background-color: #F9F3EC;
+  padding: 28px 50px;
+  align-self: flex-start;
+}
+
+.poster-left-side {
+  width: 100%;
+  padding-top: 51px;
+}
+
+.ellipse1 {
+  padding-top: 51px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #f7eee4;
+  overflow: visible;
+  z-index: 1;
+}
+
+.ellipse1 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.register-section {
+  display: flex;
+  flex-direction: row;
+  background-color: #F9F3EC;
+  padding: 0 310px 0 336px;
+  font-family: "Chilanka", cursive;
+}
+
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 150px 122px 150px 62px;
+  text-align: center;
+}
+
+.register-header {
+  font-size: 55px;
+  letter-spacing: 0.55px;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+}
+
+.register-header span {
+  color: #DEAD6F;
+}
+
+.register-form input {
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid rgba(65, 64, 62, 0.2);
+}
+
+.register-form input::-moz-placeholder {
+  font-size: 17px;
+  text-transform: capitalize;
+  font-family: "Chilanka", cursive;
+}
+
+.register-form input::placeholder {
+  font-size: 17px;
+  text-transform: capitalize;
+  font-family: "Chilanka", cursive;
+}
+
+.register-btn {
+  padding: 28px 50px;
+  background-color: #41403E;
+}
+
+.register-btn p {
+  font-size: 19px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Chilanka", cursive;
+}
+
+.right-print {
+  padding: 418px 0 79px 0;
+}
+
+.left-print {
+  padding: 81px 0 382px 0;
+}
+
+.blog-card-header {
+  font-size: 26px;
+  text-transform: capitalize;
+}
+
+.blog-card-paragraph {
+  margin-top: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.inst-imgs-section {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  padding: 0 10px;
+}
+
+footer {
+  padding: 150px;
+}
+
+.footer-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: auto;
 }
 
 .top-header-section {

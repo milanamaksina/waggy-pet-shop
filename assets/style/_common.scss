@@ -1,4 +1,4 @@
-p{
+p {
   margin: 0;
 }
 
@@ -24,20 +24,20 @@ a {
   width: 606px;
   height: 606px;
   border-radius: 50%;
-  background-color: #F7EEE4;
+  background-color: #f7eee4;
   overflow: visible;
 }
 
 .ellipse img {
   position: absolute;
-  top: -167px; 
+  top: -167px;
   left: 43px;
   right: 43px;
   bottom: 53px;
   object-fit: cover;
 }
 
-h1{
+h1 {
   font-size: 88px;
   font-weight: 400;
   color: $brown-100;
@@ -46,19 +46,22 @@ h1{
   text-transform: capitalize;
 }
 
-.main-section-header{
+.main-section-header {
   display: flex;
   flex-direction: column;
   gap: 30px;
   padding: 191px 0 0 0;
 }
 
-.goods-section{
+.goods-section,
+.best-selling-section,
+.blog-posts-section,
+.footer {
   padding: 150px 310px;
   font-family: $font-family-chilanka;
 }
 
-.category-section{
+.category-section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: auto;
@@ -75,65 +78,76 @@ h1{
 
 .category-section img {
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
-h2{
+h2 {
   font-size: 55px;
   font-weight: 400;
   letter-spacing: 0.55px;
   text-transform: capitalize;
 }
 
-.pet-clothing-section{
+.pet-clothing-section,
+.pet-foodies-section,
+.best-selling-section {
   padding-top: 150px;
 }
 
-.goods-header{
+.goods-header {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding-bottom: 30px;
 }
 
-
-.shop-btn{
-  display: flex;
+.goods-header button {
   padding: 28px 50px;
+}
+
+.shop-btn {
+  display: flex;
   justify-content: center;
+  vertical-align: middle;
+  align-items: center;
   border-radius: 4px;
   border: 1px solid $brown-100;
   background-color: white;
-  color: #41403E;
+  color: #41403e;
   font-family: $font-family-chilanka;
   font-size: 19px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .shop-btn i {
   padding-left: 6px;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
 
-.cards-container{
+.cards-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+  row-gap: 45px;
 }
 
-.card-header{
+.card-header {
   border-radius: 10px;
-  padding: 0 20px;
   height: 283px;
-  background: #EEEBE5;
+  background: #eeebe5;
 }
 
-.card-header img{
+.dog-card {
+  padding: 0 20px;
+}
+
+.card-header img {
   height: 100%;
   width: 100%;
 }
@@ -151,5 +165,174 @@ h2{
   font-family: $font-family-montserrat;
   font-size: 26px;
   padding-top: 7px;
+  padding-bottom: 18px;
   color: $gold;
+}
+
+.add-to-cart-btn {
+  padding: 20px 32px;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.card-buttons i {
+  color: black;
+  padding-left: 0;
+}
+
+.heart-btn {
+  padding: 20px;
+}
+
+.food-card {
+  padding: 40px 60px;
+}
+
+.sale-poster-section {
+  display: flex;
+  flex-direction: row;
+  row-gap: 120px;
+  background-color: $beige-100;
+  padding: 37px 269px 27px 420px;
+}
+
+.poster-right-side {
+  padding: 184px 120px 184px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.poster-discount {
+  font-size: 36px;
+  color: $gold;
+  font-family: $font-family-montserrat;
+}
+
+.poster-sale {
+  font-size: 75px;
+  color: $brown-100;
+  font-family: $font-family-chilanka;
+}
+
+.poster-right-side button {
+  background-color: $beige-100;
+  padding: 28px 50px;
+  align-self: flex-start;
+}
+
+.poster-left-side {
+  width: 100%;
+  padding-top: 51px;
+}
+
+.ellipse1 {
+  // top: 51px;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
+  // height: 100%;
+  // width: 100%;
+  padding-top: 51px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #f7eee4;
+  overflow: visible;
+  z-index: 1;
+}
+
+.ellipse1 img {
+  object-fit: cover;
+}
+
+.register-section {
+  display: flex;
+  flex-direction: row;
+  background-color: $beige-100;
+  padding: 0 310px 0 336px;
+  font-family: $font-family-chilanka;
+}
+
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 150px 122px 150px 62px;
+  text-align: center;
+}
+
+.register-header {
+  font-size: 55px;
+  letter-spacing: 0.55px;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+}
+
+.register-header span {
+  color: $gold;
+}
+
+.register-form input {
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid rgba(65, 64, 62, 0.2);
+}
+
+.register-form input::placeholder {
+  font-size: 17px;
+  text-transform: capitalize;
+  font-family: $font-family-chilanka;
+}
+
+.register-btn {
+  padding: 28px 50px;
+  background-color: $brown-100;
+}
+
+.register-btn p {
+  font-size: 19px;
+  color: white;
+  text-transform: uppercase;
+  font-family: $font-family-chilanka;
+}
+
+.right-print {
+  padding: 418px 0 79px 0;
+}
+
+.left-print {
+  padding: 81px 0 382px 0;
+}
+
+.blog-card-header {
+  font-size: 26px;
+  text-transform: capitalize;
+}
+
+.blog-card-paragraph{
+  margin-top: 6px;
+  font-family: $font-family-montserrat;
+}
+
+.inst-imgs-section {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  padding: 0 10px;
+}
+
+footer{
+  padding: 150px;
+}
+
+.footer-menu{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: auto;
 }
