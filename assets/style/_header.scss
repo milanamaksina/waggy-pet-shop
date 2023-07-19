@@ -1,0 +1,46 @@
+.top-header-section{
+    display: flex;
+    align-items: center;
+    padding: 28px 310px;
+  }
+
+  .product-search-btn{
+    height: 50px;
+    border-radius: 4px;
+  }
+  
+  .product-search-btn::placeholder {
+    font-family: $font-family-montserrat;
+  }
+  
+  .waggy-logo-text{
+    font-family: $font-family-chilanka;
+    font-size: 35px;
+    letter-spacing: 1.05px;
+    text-transform: uppercase;
+}
+  
+.shop-logo-text{
+    font-family: $font-family-montserrat;
+    font-size: 15px;
+    letter-spacing: 0.9px;
+    text-transform: capitalize;
+}
+  
+.line {
+    border-top: 1px solid $gray-100;
+}
+  
+.bottom-header-section{
+    display: flex;
+    align-items: center;
+    padding: 20px 310px;
+    font-family: $font-family-chilanka;
+}
+
+nav{
+    display: flex;
+    gap: 50px;
+    padding-left: 189px;
+    padding-right: 228px;
+}

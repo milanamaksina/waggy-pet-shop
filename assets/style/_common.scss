@@ -1,53 +1,5 @@
-
-.top-header-section{
-  display: flex;
-  align-items: center;
-  padding: 28px 310px;
-}
-
-.product-search-btn{
-  height: 50px;
-  border-radius: 4px;
-}
-
-.product-search-btn::placeholder {
-  font-family: $font-family-montserrat;
-}
-
-.waggy-logo-text{
-  font-family: $font-family-chilanka;
-  font-size: 35px;
-  letter-spacing: 1.05px;
-  text-transform: uppercase;
-}
-
-.shop-logo-text{
-  font-family: $font-family-montserrat;
-  font-size: 15px;
-  letter-spacing: 0.9px;
-  text-transform: capitalize;
-}
-
-.line {
-  border-top: 1px solid $gray-100;
-}
-
-.bottom-header-section{
-  display: flex;
-  align-items: center;
-  padding: 20px 310px;
-  font-family: $font-family-chilanka;
-}
-
 p{
   margin: 0;
-}
-
-nav{
-  display: flex;
-  gap: 50px;
-  padding-left: 189px;
-  padding-right: 228px;
 }
 
 a {
@@ -141,6 +93,7 @@ h2{
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-bottom: 30px;
 }
 
 
@@ -161,6 +114,12 @@ h2{
   padding-left: 6px;
 }
 
+.card{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
 .cards-container{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -170,5 +129,27 @@ h2{
 .card-header{
   border-radius: 10px;
   padding: 0 20px;
+  height: 283px;
   background: #EEEBE5;
+}
+
+.card-header img{
+  height: 100%;
+  width: 100%;
+}
+
+.goods-card-description i {
+  color: $gold;
+}
+
+.card-description-header {
+  padding-bottom: 4px;
+  font-size: 26px;
+}
+
+.price {
+  font-family: $font-family-montserrat;
+  font-size: 26px;
+  padding-top: 7px;
+  color: $gold;
 }
