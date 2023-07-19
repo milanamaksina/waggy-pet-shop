@@ -328,11 +328,55 @@ h2 {
 }
 
 footer{
-  padding: 150px;
+  padding: 150px 350px 30px 350px;
+}
+
+.circle{
+  height: 45px;
+  width: 45px;
+  border-radius: 70px;
+  display: flex;
+}
+
+.gray-border {
+  border: 1px solid $gray-500; 
+}
+
+.gold{
+  background-color: $gold;
+}
+
+.circle img {
+  margin: auto;
+}
+
+.contact-icons{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  padding-top: 10px;
+}
+
+.enter-email-input{
+  border-radius: 50px;
+  background-color: white;
+  padding: 11px 31px;
+}
+
+.enter-email::placeholder{
+  font-size: 15px;
+  font-family: $font-family-montserrat;
+  color: $gray-500;
 }
 
 .footer-menu{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: auto;
+  font-size: 16px;
+  font-family: $font-family-montserrat;
+  color: $gray-400;
+}
+
+.credentials{
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
 }

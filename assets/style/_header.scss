@@ -1,46 +1,66 @@
-.top-header-section{
-    display: flex;
-    align-items: center;
-    padding: 28px 310px;
-  }
+.top-header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 310px;
+  font-family: $font-family-montserrat;
+  font-size: 15px;
+  letter-spacing: 0.9px;
+  color: $gray-300;
+}
 
-  .product-search-btn{
-    height: 50px;
-    border-radius: 4px;
-  }
-  
-  .product-search-btn::placeholder {
-    font-family: $font-family-montserrat;
-  }
-  
-  .waggy-logo-text{
-    font-family: $font-family-chilanka;
-    font-size: 35px;
-    letter-spacing: 1.05px;
-    text-transform: uppercase;
+.logo-container{
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
 }
-  
-.shop-logo-text{
-    font-family: $font-family-montserrat;
-    font-size: 15px;
-    letter-spacing: 0.9px;
-    text-transform: capitalize;
+
+.waggy-logo-text {
+  font-family: $font-family-chilanka;
+  font-size: 35px;
+  letter-spacing: 1.05px;
+  text-transform: uppercase;
+  color: $brown-100;
 }
-  
+
 .line {
-    border-top: 1px solid $gray-100;
-}
-  
-.bottom-header-section{
-    display: flex;
-    align-items: center;
-    padding: 20px 310px;
-    font-family: $font-family-chilanka;
+  border-top: 1px solid $gray-100;
 }
 
-nav{
-    display: flex;
-    gap: 50px;
-    padding-left: 189px;
-    padding-right: 228px;
+.bottom-header-section {
+  display: flex;
+  padding: 20px 310px;
+  font-family: $font-family-chilanka;
+}
+
+nav {
+  gap: 50px;
+  display: flex;
+  padding-left: 189px;
+  padding-right: 228px;
+}
+
+.nav-icons{
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.contacts-container{
+  display: flex;
+  flex-direction: row;
+  gap: 67px;
+  padding: 5px 0;
+}
+
+.contacts-container div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.contact{
+  font-family: $font-family-chilanka;
+  font-size: 19px;
+  color: $brown-100;
 }

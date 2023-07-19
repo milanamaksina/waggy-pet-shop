@@ -332,32 +332,81 @@ h2 {
 }
 
 footer {
-  padding: 150px;
+  padding: 150px 350px 30px 350px;
+}
+
+.circle {
+  height: 45px;
+  width: 45px;
+  border-radius: 70px;
+  display: flex;
+}
+
+.gray-border {
+  border: 1px solid #D9D9D8;
+}
+
+.gold {
+  background-color: #DEAD6F;
+}
+
+.circle img {
+  margin: auto;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding-top: 10px;
+}
+
+.enter-email-input {
+  border-radius: 50px;
+  background-color: white;
+  padding: 11px 31px;
+}
+
+.enter-email::-moz-placeholder {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #D9D9D8;
+}
+
+.enter-email::placeholder {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #D9D9D8;
 }
 
 .footer-menu {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: auto;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #908F8D;
+}
+
+.credentials {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .top-header-section {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 28px 310px;
-}
-
-.product-search-btn {
-  height: 50px;
-  border-radius: 4px;
-}
-
-.product-search-btn::-moz-placeholder {
   font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.9px;
+  color: #A3A2A1;
 }
 
-.product-search-btn::placeholder {
-  font-family: "Montserrat", sans-serif;
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
 }
 
 .waggy-logo-text {
@@ -365,13 +414,7 @@ footer {
   font-size: 35px;
   letter-spacing: 1.05px;
   text-transform: uppercase;
-}
-
-.shop-logo-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  letter-spacing: 0.9px;
-  text-transform: capitalize;
+  color: #41403E;
 }
 
 .line {
@@ -380,16 +423,40 @@ footer {
 
 .bottom-header-section {
   display: flex;
-  align-items: center;
   padding: 20px 310px;
   font-family: "Chilanka", cursive;
 }
 
 nav {
-  display: flex;
   gap: 50px;
+  display: flex;
   padding-left: 189px;
   padding-right: 228px;
+}
+
+.nav-icons {
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: row;
+  gap: 67px;
+  padding: 5px 0;
+}
+
+.contacts-container div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.contact {
+  font-family: "Chilanka", cursive;
+  font-size: 19px;
+  color: #41403E;
 }
 
 * {
