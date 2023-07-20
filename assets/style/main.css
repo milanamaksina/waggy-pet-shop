@@ -7,25 +7,6 @@ a {
   text-decoration: none;
 }
 
-.ellipse {
-  position: relative;
-  width: 100%;
-  min-height: 606px;
-  border-radius: 50%;
-  background-color: #f7eee4;
-  overflow: visible;
-}
-
-.ellipse img {
-  position: absolute;
-  top: -167px;
-  left: 43px;
-  right: 43px;
-  bottom: 53px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 h1 {
   font-size: 88px;
   font-weight: 400;
@@ -33,6 +14,7 @@ h1 {
   font-family: "Chilanka", cursive;
   letter-spacing: 2.64px;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 .goods-section,
@@ -41,27 +23,6 @@ h1 {
 .footer {
   padding: 150px 310px;
   font-family: "Chilanka", cursive;
-}
-
-.category-section {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  -moz-column-gap: auto;
-       column-gap: auto;
-  row-gap: 16px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  font-family: "Chilanka", cursive;
-}
-
-.category-section p {
-  font-size: 26px;
-}
-
-.category-section img {
-  display: block;
-  margin: 0 auto;
 }
 
 h2 {
@@ -81,6 +42,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
   padding-bottom: 30px;
 }
 
@@ -105,211 +67,6 @@ h2 {
 
 .shop-btn i {
   padding-left: 6px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-}
-
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  row-gap: 45px;
-}
-
-.card-header {
-  border-radius: 10px;
-  height: 283px;
-  background: #eeebe5;
-}
-
-.dog-card {
-  padding: 0 20px;
-}
-
-.card-header img {
-  height: 100%;
-  width: 100%;
-}
-
-.goods-card-description i {
-  color: #DEAD6F;
-}
-
-.card-description-header {
-  padding-bottom: 4px;
-  font-size: 26px;
-}
-
-.price {
-  font-family: "Montserrat", sans-serif;
-  font-size: 26px;
-  padding-top: 7px;
-  padding-bottom: 18px;
-  color: #DEAD6F;
-}
-
-.add-to-cart-btn {
-  padding: 20px 32px;
-}
-
-.card-buttons {
-  display: flex;
-  flex-direction: row;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-}
-
-.card-buttons i {
-  color: black;
-  padding-left: 0;
-}
-
-.heart-btn {
-  padding: 20px;
-}
-
-.food-card {
-  padding: 40px 60px;
-}
-
-.sale-poster-section {
-  display: flex;
-  flex-direction: row;
-  row-gap: 120px;
-  background-color: #F9F3EC;
-  padding: 37px 269px 27px 420px;
-}
-
-.poster-right-side {
-  padding: 184px 120px 184px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.poster-discount {
-  font-size: 36px;
-  color: #DEAD6F;
-  font-family: "Montserrat", sans-serif;
-}
-
-.poster-sale {
-  font-size: 75px;
-  color: #41403E;
-  font-family: "Chilanka", cursive;
-}
-
-.poster-right-side button {
-  background-color: #F9F3EC;
-  padding: 28px 50px;
-  align-self: flex-start;
-}
-
-.poster-left-side {
-  width: 100%;
-  padding-top: 51px;
-}
-
-.ellipse1 {
-  padding-top: 51px;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #f7eee4;
-  overflow: visible;
-  z-index: 1;
-}
-
-.ellipse1 img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.register-section {
-  display: flex;
-  flex-direction: row;
-  background-color: #F9F3EC;
-  padding: 0 310px 0 336px;
-  font-family: "Chilanka", cursive;
-}
-
-.register-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  padding: 150px 122px 150px 62px;
-  text-align: center;
-}
-
-.register-header {
-  font-size: 55px;
-  letter-spacing: 0.55px;
-  text-transform: capitalize;
-  padding-bottom: 20px;
-}
-
-.register-header span {
-  color: #DEAD6F;
-}
-
-.register-form input {
-  border-radius: 4px;
-  padding: 20px;
-  border: 1px solid rgba(65, 64, 62, 0.2);
-}
-
-.register-form input::-moz-placeholder {
-  font-size: 17px;
-  text-transform: capitalize;
-  font-family: "Chilanka", cursive;
-}
-
-.register-form input::placeholder {
-  font-size: 17px;
-  text-transform: capitalize;
-  font-family: "Chilanka", cursive;
-}
-
-.register-btn {
-  padding: 28px 50px;
-  background-color: #41403E;
-}
-
-.register-btn p {
-  font-size: 19px;
-  color: white;
-  text-transform: uppercase;
-  font-family: "Chilanka", cursive;
-}
-
-.right-print {
-  padding: 418px 0 79px 0;
-}
-
-.left-print {
-  padding: 81px 0 382px 0;
-}
-
-.blog-card-header {
-  font-size: 26px;
-  text-transform: capitalize;
-}
-
-.blog-card-paragraph {
-  margin-top: 6px;
-  font-family: "Montserrat", sans-serif;
-}
-
-.inst-imgs-section {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 20px;
-  padding: 0 10px;
 }
 
 footer {
@@ -405,6 +162,7 @@ footer {
 .bottom-header-section {
   display: flex;
   padding: 20px 310px;
+  justify-content: space-between;
   font-family: "Chilanka", cursive;
 }
 
@@ -431,7 +189,7 @@ nav {
 .contacts-container div {
   display: flex;
   flex-direction: column;
-  row-gap: 5px;
+  row-gap: 8px;
 }
 
 .contact {
@@ -463,6 +221,282 @@ nav {
   flex-direction: column;
   gap: 30px;
   padding: 191px 0 0 0;
+}
+
+.sale-text {
+  color: #DEAD6F;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 span {
+  color: #DEAD6F;
+}
+
+.main-section-header button {
+  align-self: flex-start;
+  padding: 28px 50px;
+  background-color: #F9F3EC;
+}
+
+.ellipse-main-section {
+  position: relative;
+  width: 606px;
+  min-height: 606px;
+  border-radius: 50%;
+  background-color: #f7eee4;
+  overflow: visible;
+}
+
+.ellipse-main-section img {
+  position: absolute;
+  top: -167px;
+  left: 43px;
+  right: 43px;
+  bottom: 53px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.category-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  -moz-column-gap: auto;
+       column-gap: auto;
+  row-gap: 16px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: "Chilanka", cursive;
+}
+
+.category-section p {
+  font-size: 26px;
+}
+
+.category-section img {
+  display: block;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  row-gap: 45px;
+}
+
+.card-header {
+  border-radius: 10px;
+  height: 283px;
+  background: #eeebe5;
+}
+
+.dog-card {
+  padding: 0 20px;
+}
+
+.card-header img {
+  height: 100%;
+  width: 100%;
+}
+
+.goods-card-description i {
+  color: #DEAD6F;
+}
+
+.card-description-header {
+  padding-bottom: 4px;
+  font-size: 26px;
+}
+
+.price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  padding-top: 7px;
+  padding-bottom: 18px;
+  color: #DEAD6F;
+}
+
+.add-to-cart-btn {
+  padding: 20px 32px;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.card-buttons i {
+  color: black;
+  padding-left: 0;
+}
+
+.heart-btn {
+  padding: 20px;
+}
+
+.food-card {
+  padding: 40px 60px;
+}
+
+.rating {
+  font-size: 15px;
+  color: #908F8D;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 6px;
+}
+
+.sale-poster-section {
+  display: flex;
+  flex-direction: row;
+  row-gap: 120px;
+  background-color: #F9F3EC;
+  padding: 37px 269px 27px 420px;
+}
+
+.poster-right-side {
+  padding: 184px 120px 184px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.poster-discount {
+  font-size: 36px;
+  color: #DEAD6F;
+  font-family: "Montserrat", sans-serif;
+}
+
+.poster-sale {
+  font-size: 75px;
+  color: #41403E;
+  font-family: "Chilanka", cursive;
+}
+
+.poster-right-side button {
+  background-color: #F9F3EC;
+  padding: 28px 50px;
+  align-self: flex-start;
+}
+
+.poster-left-side {
+  width: 100%;
+  padding-top: 51px;
+}
+
+.ellipse-poster-section {
+  position: relative;
+  width: 648px;
+  min-height: 648px;
+  border-radius: 50%;
+  background-color: #f7eee4;
+  overflow: visible;
+}
+
+.ellipse-poster-section img {
+  position: absolute;
+  height: 669px;
+  width: 451px;
+  top: -81px;
+  left: 82px;
+  right: 115px;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog-card-header {
+  font-size: 26px;
+  text-transform: capitalize;
+  padding-bottom: 6px;
+}
+
+.inst-imgs-section {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  padding: 0 10px;
+}
+
+.blog-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #908F8D;
+}
+
+.register-section {
+  display: flex;
+  flex-direction: row;
+  background-color: #F9F3EC;
+  padding: 0 310px 0 336px;
+  font-family: "Chilanka", cursive;
+}
+
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 150px 122px 150px 62px;
+  text-align: center;
+}
+
+.register-header {
+  font-size: 55px;
+  letter-spacing: 0.55px;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+}
+
+.register-header span {
+  color: #DEAD6F;
+}
+
+.register-form input {
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid rgba(65, 64, 62, 0.2);
+}
+
+.register-form input::-moz-placeholder {
+  font-size: 17px;
+  text-transform: capitalize;
+  font-family: "Chilanka", cursive;
+}
+
+.register-form input::placeholder {
+  font-size: 17px;
+  text-transform: capitalize;
+  font-family: "Chilanka", cursive;
+}
+
+.register-btn {
+  padding: 28px 50px;
+  background-color: #41403E;
+}
+
+.register-btn p {
+  font-size: 19px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Chilanka", cursive;
+}
+
+.right-print {
+  padding: 418px 0 79px 0;
+}
+
+.left-print {
+  padding: 81px 0 382px 0;
 }
 
 * {

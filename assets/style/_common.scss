@@ -7,24 +7,6 @@ a {
   text-decoration: none;
 }
 
-.ellipse {
-  position: relative;
-  width: 100%;
-  min-height: 606px;
-  border-radius: 50%;
-  background-color: #f7eee4;
-  overflow: visible;
-}
-
-.ellipse img {
-  position: absolute;
-  top: -167px;
-  left: 43px;
-  right: 43px;
-  bottom: 53px;
-  object-fit: cover;
-}
-
 h1 {
   font-size: 88px;
   font-weight: 400;
@@ -32,9 +14,8 @@ h1 {
   font-family: $font-family-chilanka;
   letter-spacing: 2.64px;
   text-transform: capitalize;
-  
+  white-space: nowrap;
 }
-
 
 .goods-section,
 .best-selling-section,
@@ -42,26 +23,6 @@ h1 {
 .footer {
   padding: 150px 310px;
   font-family: $font-family-chilanka;
-}
-
-.category-section {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: auto;
-  row-gap: 16px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  font-family: $font-family-chilanka;
-}
-
-.category-section p {
-  font-size: 26px;
-}
-
-.category-section img {
-  display: block;
-  margin: 0 auto;
 }
 
 h2 {
@@ -81,6 +42,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  align-items: center;
   padding-bottom: 30px;
 }
 
@@ -105,209 +67,6 @@ h2 {
 
 .shop-btn i {
   padding-left: 6px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-}
-
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  row-gap: 45px;
-}
-
-.card-header {
-  border-radius: 10px;
-  height: 283px;
-  background: #eeebe5;
-}
-
-.dog-card {
-  padding: 0 20px;
-}
-
-.card-header img {
-  height: 100%;
-  width: 100%;
-}
-
-.goods-card-description i {
-  color: $gold;
-}
-
-.card-description-header {
-  padding-bottom: 4px;
-  font-size: 26px;
-}
-
-.price {
-  font-family: $font-family-montserrat;
-  font-size: 26px;
-  padding-top: 7px;
-  padding-bottom: 18px;
-  color: $gold;
-}
-
-.add-to-cart-btn {
-  padding: 20px 32px;
-}
-
-.card-buttons {
-  display: flex;
-  flex-direction: row;
-  column-gap: 20px;
-}
-
-.card-buttons i {
-  color: black;
-  padding-left: 0;
-}
-
-.heart-btn {
-  padding: 20px;
-}
-
-.food-card {
-  padding: 40px 60px;
-}
-
-.sale-poster-section {
-  display: flex;
-  flex-direction: row;
-  row-gap: 120px;
-  background-color: $beige-100;
-  padding: 37px 269px 27px 420px;
-}
-
-.poster-right-side {
-  padding: 184px 120px 184px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.poster-discount {
-  font-size: 36px;
-  color: $gold;
-  font-family: $font-family-montserrat;
-}
-
-.poster-sale {
-  font-size: 75px;
-  color: $brown-100;
-  font-family: $font-family-chilanka;
-}
-
-.poster-right-side button {
-  background-color: $beige-100;
-  padding: 28px 50px;
-  align-self: flex-start;
-}
-
-.poster-left-side {
-  width: 100%;
-  padding-top: 51px;
-}
-
-.ellipse1 {
-  // top: 51px;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
-  // height: 100%;
-  // width: 100%;
-  padding-top: 51px;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #f7eee4;
-  overflow: visible;
-  z-index: 1;
-}
-
-.ellipse1 img {
-  object-fit: cover;
-}
-
-.register-section {
-  display: flex;
-  flex-direction: row;
-  background-color: $beige-100;
-  padding: 0 310px 0 336px;
-  font-family: $font-family-chilanka;
-}
-
-.register-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  padding: 150px 122px 150px 62px;
-  text-align: center;
-}
-
-.register-header {
-  font-size: 55px;
-  letter-spacing: 0.55px;
-  text-transform: capitalize;
-  padding-bottom: 20px;
-}
-
-.register-header span {
-  color: $gold;
-}
-
-.register-form input {
-  border-radius: 4px;
-  padding: 20px;
-  border: 1px solid rgba(65, 64, 62, 0.2);
-}
-
-.register-form input::placeholder {
-  font-size: 17px;
-  text-transform: capitalize;
-  font-family: $font-family-chilanka;
-}
-
-.register-btn {
-  padding: 28px 50px;
-  background-color: $brown-100;
-}
-
-.register-btn p {
-  font-size: 19px;
-  color: white;
-  text-transform: uppercase;
-  font-family: $font-family-chilanka;
-}
-
-.right-print {
-  padding: 418px 0 79px 0;
-}
-
-.left-print {
-  padding: 81px 0 382px 0;
-}
-
-.blog-card-header {
-  font-size: 26px;
-  text-transform: capitalize;
-}
-
-.blog-card-paragraph{
-  margin-top: 6px;
-  font-family: $font-family-montserrat;
-}
-
-.inst-imgs-section {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 20px;
-  padding: 0 10px;
 }
 
 footer{

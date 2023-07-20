@@ -30,6 +30,7 @@
 .bottom-header-section {
   display: flex;
   padding: 20px 310px;
+  justify-content: space-between;
   font-family: $font-family-chilanka;
 }
 
@@ -56,7 +57,7 @@ nav {
 .contacts-container div {
   display: flex;
   flex-direction: column;
-  row-gap: 5px;
+  row-gap: 8px;
 }
 
 .contact{

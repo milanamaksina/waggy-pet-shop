@@ -1,0 +1,18 @@
+.blog-card-header {
+    font-size: 26px;
+    text-transform: capitalize;
+    padding-bottom: 6px;
+}
+
+.inst-imgs-section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    padding: 0 10px;
+}
+
+.blog-description{
+    font-family: $font-family-montserrat;
+    font-size: 16px;
+    color: $gray-400;
+}
