@@ -7,22 +7,10 @@ a {
   text-decoration: none;
 }
 
-.main-section {
-  display: flex;
-  background-color: #F9F3EC;
-  padding: 31px 310px 67px 247px;
-  gap: 58px;
-}
-
-.dog-img-container {
-  width: 100%;
-  padding-top: 167px;
-}
-
 .ellipse {
   position: relative;
-  width: 606px;
-  height: 606px;
+  width: 100%;
+  min-height: 606px;
   border-radius: 50%;
   background-color: #f7eee4;
   overflow: visible;
@@ -45,13 +33,6 @@ h1 {
   font-family: "Chilanka", cursive;
   letter-spacing: 2.64px;
   text-transform: capitalize;
-}
-
-.main-section-header {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding: 191px 0 0 0;
 }
 
 .goods-section,
@@ -457,6 +438,31 @@ nav {
   font-family: "Chilanka", cursive;
   font-size: 19px;
   color: #41403E;
+}
+
+.nav-icons i {
+  display: flex;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+  background-color: #F9F3EC;
+  padding: 31px 310px 67px 247px;
+  gap: 58px;
+}
+
+.dog-img-container {
+  width: 100%;
+  padding-top: 167px;
+}
+
+.main-section-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 191px 0 0 0;
 }
 
 * {
