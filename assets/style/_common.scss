@@ -14,7 +14,6 @@ h1 {
   font-family: $font-family-chilanka;
   letter-spacing: 2.64px;
   text-transform: capitalize;
-  white-space: nowrap;
 }
 
 .goods-section,
@@ -69,11 +68,11 @@ h2 {
   padding-left: 6px;
 }
 
-footer{
+footer {
   padding: 150px 350px 30px 350px;
 }
 
-.circle{
+.circle {
   height: 45px;
   width: 45px;
   border-radius: 70px;
@@ -81,10 +80,10 @@ footer{
 }
 
 .gray-border {
-  border: 1px solid $gray-500; 
+  border: 1px solid $gray-500;
 }
 
-.gold{
+.gold {
   background-color: $gold;
 }
 
@@ -92,33 +91,61 @@ footer{
   margin: auto;
 }
 
-.contact-icons{
+.contact-icons {
   display: flex;
   flex-direction: row;
   column-gap: 10px;
   padding-top: 10px;
 }
 
-.enter-email-input{
+.enter-email-input {
   border-radius: 50px;
   background-color: white;
   padding: 11px 31px;
 }
 
-.enter-email::placeholder{
+.enter-email::placeholder {
   font-size: 15px;
   font-family: $font-family-montserrat;
   color: $gray-500;
 }
 
-.footer-menu{
+.footer-menu {
   font-size: 16px;
   font-family: $font-family-montserrat;
   color: $gray-400;
 }
 
-.credentials{
+.credentials {
   padding-top: 100px;
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 850px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .goods-section,
+  .best-selling-section,
+  .blog-posts-section,
+  .footer {
+    padding: 10px 20px;
+    font-family: $font-family-chilanka;
+  }
+
+  h2{
+    font-size: 26px;
+  }
+
+  .goods-header button {
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 851px) {
+  .mobile-only {
+    display: none !important;
+  }
 }

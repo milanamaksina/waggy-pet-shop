@@ -1,3 +1,4 @@
+@charset "UTF-8";
 p {
   margin: 0;
 }
@@ -14,7 +15,6 @@ h1 {
   font-family: "Chilanka", cursive;
   letter-spacing: 2.64px;
   text-transform: capitalize;
-  white-space: nowrap;
 }
 
 .goods-section,
@@ -130,6 +130,29 @@ footer {
   justify-content: space-between;
 }
 
+@media (max-width: 850px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .goods-section,
+  .best-selling-section,
+  .blog-posts-section,
+  .footer {
+    padding: 10px 20px;
+    font-family: "Chilanka", cursive;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  .goods-header button {
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 851px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
 .top-header-section {
   display: flex;
   align-items: center;
@@ -202,6 +225,12 @@ nav {
   display: flex;
 }
 
+@media (max-width: 850px) {
+  .top-header-section,
+  .bottom-header-section {
+    padding: 10px;
+  }
+}
 .main-section {
   display: flex;
   flex-direction: row;
@@ -241,23 +270,41 @@ h1 span {
 
 .ellipse-main-section {
   position: relative;
-  width: 606px;
+  width: 100%;
   min-height: 606px;
   border-radius: 50%;
   background-color: #f7eee4;
-  overflow: visible;
+  overflow: hidden; /* Изображение будет обрезано внутри круга */
 }
 
 .ellipse-main-section img {
   position: absolute;
-  top: -167px;
-  left: 43px;
-  right: 43px;
-  bottom: 53px;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   -o-object-fit: cover;
-     object-fit: cover;
+     object-fit: cover; /* Изображение будет занимать всю доступную площадь, сохраняя пропорции */
 }
 
+@media (max-width: 850px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .main-section {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .main-section-header {
+    display: flex;
+    align-items: center;
+  }
+}
 .category-section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -279,6 +326,12 @@ h1 span {
   margin: 0 auto;
 }
 
+@media (max-width: 850px) {
+  .category-section {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5px;
+  }
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -355,6 +408,19 @@ h1 span {
   padding-left: 6px;
 }
 
+@media (max-width: 850px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    row-gap: 30px;
+  }
+  .add-to-cart-btn {
+    padding: 5px 10px;
+  }
+  .card-description-header {
+    font-size: 16px;
+  }
+}
 .sale-poster-section {
   display: flex;
   flex-direction: row;

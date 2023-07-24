@@ -69,3 +69,10 @@ nav {
 .nav-icons i {
   display: flex;
 }
+
+@media (max-width: 850px) {
+  .top-header-section,
+  .bottom-header-section{
+    padding: 10px;
+  }
+}

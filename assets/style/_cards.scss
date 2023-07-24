@@ -72,3 +72,19 @@
     font-family: $font-family-montserrat;
     padding-left: 6px;
 }
+
+@media (max-width: 850px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        row-gap: 30px;
+    }
+
+    .add-to-cart-btn{
+        padding: 5px 10px;
+    }
+
+    .card-description-header{
+        font-size: 16px;
+    }
+}
