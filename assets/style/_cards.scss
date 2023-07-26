@@ -80,11 +80,23 @@
         row-gap: 30px;
     }
 
-    .add-to-cart-btn{
+    .add-to-cart-btn {
         padding: 5px 10px;
     }
 
-    .card-description-header{
+    .card-description-header {
         font-size: 16px;
+    }
+
+    .card-header {
+        height: 200px;
+    }
+
+    .food-card{
+        padding: 15px 20px;
+    }
+
+    .dog-card {
+        padding: 0 10px;
     }
 }

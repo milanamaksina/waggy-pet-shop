@@ -1,14 +1,10 @@
 .main-section {
-    display: flex;
-    flex-direction: row;
     background-color: $beige-100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 31px 310px 67px 247px;
-    gap: 58px;
-}
-
-.dog-img-container {
-    width: 100%;
-    padding-top: 167px;
+    gap: 50px;
 }
 
 .main-section-header {
@@ -16,7 +12,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 191px 0 0 0;
+    padding-top: 191px;
 }
 
 .sale-text {
@@ -35,20 +31,70 @@ h1 span {
     background-color: $beige-100;
 }
 
-.ellipse-main-section {
+.dog-img-container {
     position: relative;
-    width: 606px;
-    min-height: 606px;
-    border-radius: 50%;
-    background-color: #f7eee4;
-    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.ellipse-main-section img {
+.dog-img {
+    display: inline-block;
+    z-index: 1;
+}
+
+.dog-img-container::before {
     position: absolute;
-    top: -167px;
-    left: 43px;
-    right: 43px;
-    bottom: 53px;
-    object-fit: cover;
+    top: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: auto;
+    height: 606px;
+    border-radius: 50%;
+    background-color: $beige-200;
+    content: "";
+}
+
+@media (max-width: 850px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    .main-section {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .main-section-header {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        padding-top: 40px;
+    }
+
+    .dog-img {
+        height: 500px;
+    }
+
+    .dog-img-container::before {
+        width: auto;
+        height: 350px;
+    }
+
+    .center-btn {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .col-span-2 {
+       grid-column: span 2;
+    }
 }

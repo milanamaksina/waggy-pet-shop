@@ -2,6 +2,10 @@ p {
   margin: 0;
 }
 
+body {
+  width: 100%;
+}
+
 a {
   color: $brown-100;
   text-decoration: none;
@@ -41,6 +45,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  gap: 10px;
   align-items: center;
   padding-bottom: 30px;
 }
@@ -68,7 +73,7 @@ h2 {
   padding-left: 6px;
 }
 
-footer {
+.footer {
   padding: 150px 350px 30px 350px;
 }
 
@@ -91,37 +96,6 @@ footer {
   margin: auto;
 }
 
-.contact-icons {
-  display: flex;
-  flex-direction: row;
-  column-gap: 10px;
-  padding-top: 10px;
-}
-
-.enter-email-input {
-  border-radius: 50px;
-  background-color: white;
-  padding: 11px 31px;
-}
-
-.enter-email::placeholder {
-  font-size: 15px;
-  font-family: $font-family-montserrat;
-  color: $gray-500;
-}
-
-.footer-menu {
-  font-size: 16px;
-  font-family: $font-family-montserrat;
-  color: $gray-400;
-}
-
-.credentials {
-  padding-top: 100px;
-  display: flex;
-  justify-content: space-between;
-}
-
 @media (max-width: 850px) {
   .desktop-only {
     display: none !important;
@@ -131,11 +105,17 @@ footer {
   .best-selling-section,
   .blog-posts-section,
   .footer {
-    padding: 10px 20px;
+    padding: 50px 20px;
     font-family: $font-family-chilanka;
   }
 
-  h2{
+  .pet-clothing-section,
+  .pet-foodies-section,
+  .best-selling-section {
+    padding-top: 80px;
+  }
+
+  h2 {
     font-size: 26px;
   }
 

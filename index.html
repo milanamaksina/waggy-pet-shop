@@ -57,16 +57,19 @@
       </div>
     </header>
     <div class="main-section">
-      <div class="dog-img-container">
-        <div class="ellipse-main-section">
-          <img src="./assets/img/main-section-dog.png" />
-        </div>
-      </div>
-      <div class="main-section-header">
+      <div class="main-section-header mobile-only">
         <p class="sale-text">Save 10 - 20 % off</p>
         <h1>Best destination <br />for<span> your pets</span></h1>
-        <button class="btn btn-warning shop-btn" type="reset">
-          <span>Shop now
+      </div>
+      <div class="dog-img-container">
+        <img class="dog-img" src="./assets/img/main-section-dog.png"/>
+      </div>
+      <div class="main-section-header">
+        <p class="sale-text desktop-only">Save 10 - 20 % off</p>
+        <h1 class="desktop-only">Best destination <br />for<span> your pets</span></h1>
+        <button class="btn btn-warning shop-btn center-btn" type="reset">
+          <span
+            >Shop now
             <i class="fa-solid fa-arrow-right"></i>
           </span>
         </button>
@@ -94,8 +97,10 @@
         <img src="./assets/img/ph_fish.png" />
         <p>Dog shop</p>
         <p>Fish shop</p>
-        <img src="./assets/img/ph_cat.png" />
-        <p>Cat shop</p>
+        <div class="col-span-2">
+          <img src="./assets/img/ph_cat.png" />
+          <p>Cat shop</p>
+        </div>
       </div>
       <div class="pet-clothing-section">
         <div class="goods-header">
@@ -440,17 +445,15 @@
       <div class="poster-right-side">
         <p class="poster-discount">Upto 40% off</p>
         <p class="poster-sale">Clearance<br />sale !!!</p>
-        <button class="btn btn-warning shop-btn" type="reset">
+        <button class="btn btn-warning shop-btn center-btn" type="reset">
           <span>
             Shop all
             <i class="fa-solid fa-arrow-right"></i>
           </span>
         </button>
       </div>
-      <div class="poster-left-side">
-        <div class="ellipse-poster-section">
-          <img src="./assets/img/sale-dog.png" />
-        </div>
+      <div class="dog-img-container">
+        <img class="dog-img sale-poster-img" src="./assets/img/sale-dog.png"/>
       </div>
     </div>
     <div class="best-selling-section">
@@ -571,7 +574,7 @@
       </div>
     </div>
     <div class="register-section">
-      <img class="left-print" src="./assets/img/print.svg" />
+      <img class="left-print desktop-only" src="./assets/img/print.svg" />
       <div class="register-form">
         <p class="register-header">
           Get <span>20% Off</span> on <br />
@@ -584,7 +587,7 @@
           <p>Register it now</p>
         </button>
       </div>
-      <img class="right-print" src="./assets/img/print.svg" />
+      <img class="right-print desktop-only" src="./assets/img/print.svg" />
     </div>
     <div class="blog-posts-section">
       <div class="goods-header">
@@ -600,11 +603,13 @@
         <div class="card">
           <img src="./assets/img/blog1.png" />
           <div>
-            <p class="blog-card-header">10 Reasons to be helpful towards any animals</p>
+            <p class="blog-card-header">
+              10 Reasons to be helpful towards any animals
+            </p>
             <p class="blog-description">
-              At the core of our
-              practice is the idea that cities are the incubators of our greatest
-              achievements, and the best hope for a sustainable future.
+              At the core of our practice is the idea that cities are the
+              incubators of our greatest achievements, and the best hope for a
+              sustainable future.
             </p>
           </div>
         </div>
@@ -613,9 +618,9 @@
           <div>
             <p class="blog-card-header">How to know your pet is hungry</p>
             <p class="blog-description">
-              At the core of our practice is the
-              idea that cities are the incubators of our greatest achievements,
-              and the best hope for a sustainable future.
+              At the core of our practice is the idea that cities are the
+              incubators of our greatest achievements, and the best hope for a
+              sustainable future.
             </p>
           </div>
         </div>
@@ -632,7 +637,7 @@
         </div>
       </div>
     </div>
-    <div class="inst-imgs-section">
+    <div class="inst-imgs-section desktop-only">
       <img src="./assets/img/inst-1.png" />
       <img src="./assets/img/inst-2.png" />
       <img src="./assets/img/inst-3.png" />
@@ -640,7 +645,7 @@
       <img src="./assets/img/inst-5.png" />
       <img src="./assets/img/inst-6.png" />
     </div>
-    <footer>
+    <div class="footer">
       <div class="footer-menu">
         <div class="card">
           <div class="logo-container">
@@ -681,6 +686,6 @@
           <p>Template design by Templates Jungle</p>
         </div>
       </div>
-    </footer>
+    </div>
   </body>
 </html>

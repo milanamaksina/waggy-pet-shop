@@ -3,6 +3,10 @@ p {
   margin: 0;
 }
 
+body {
+  width: 100%;
+}
+
 a {
   color: #41403E;
   text-decoration: none;
@@ -42,6 +46,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  gap: 10px;
   align-items: center;
   padding-bottom: 30px;
 }
@@ -69,7 +74,7 @@ h2 {
   padding-left: 6px;
 }
 
-footer {
+.footer {
   padding: 150px 350px 30px 350px;
 }
 
@@ -92,44 +97,6 @@ footer {
   margin: auto;
 }
 
-.contact-icons {
-  display: flex;
-  flex-direction: row;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  padding-top: 10px;
-}
-
-.enter-email-input {
-  border-radius: 50px;
-  background-color: white;
-  padding: 11px 31px;
-}
-
-.enter-email::-moz-placeholder {
-  font-size: 15px;
-  font-family: "Montserrat", sans-serif;
-  color: #D9D9D8;
-}
-
-.enter-email::placeholder {
-  font-size: 15px;
-  font-family: "Montserrat", sans-serif;
-  color: #D9D9D8;
-}
-
-.footer-menu {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  color: #908F8D;
-}
-
-.credentials {
-  padding-top: 100px;
-  display: flex;
-  justify-content: space-between;
-}
-
 @media (max-width: 850px) {
   .desktop-only {
     display: none !important;
@@ -138,8 +105,13 @@ footer {
   .best-selling-section,
   .blog-posts-section,
   .footer {
-    padding: 10px 20px;
+    padding: 50px 20px;
     font-family: "Chilanka", cursive;
+  }
+  .pet-clothing-section,
+  .pet-foodies-section,
+  .best-selling-section {
+    padding-top: 80px;
   }
   h2 {
     font-size: 26px;
@@ -228,20 +200,16 @@ nav {
 @media (max-width: 850px) {
   .top-header-section,
   .bottom-header-section {
-    padding: 10px;
+    padding: 20px;
   }
 }
 .main-section {
-  display: flex;
-  flex-direction: row;
   background-color: #F9F3EC;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 31px 310px 67px 247px;
-  gap: 58px;
-}
-
-.dog-img-container {
-  width: 100%;
-  padding-top: 167px;
+  gap: 50px;
 }
 
 .main-section-header {
@@ -249,7 +217,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 191px 0 0 0;
+  padding-top: 191px;
 }
 
 .sale-text {
@@ -268,24 +236,30 @@ h1 span {
   background-color: #F9F3EC;
 }
 
-.ellipse-main-section {
+.dog-img-container {
   position: relative;
-  width: 100%;
-  min-height: 606px;
-  border-radius: 50%;
-  background-color: #f7eee4;
-  overflow: hidden; /* Изображение будет обрезано внутри круга */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.ellipse-main-section img {
+.dog-img {
+  display: inline-block;
+  z-index: 1;
+}
+
+.dog-img-container::before {
   position: absolute;
-  width: 100%;
-  height: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -o-object-fit: cover;
-     object-fit: cover; /* Изображение будет занимать всю доступную площадь, сохраняя пропорции */
+  top: auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: auto;
+  height: 606px;
+  border-radius: 50%;
+  background-color: #F7EEE4;
+  content: "";
 }
 
 @media (max-width: 850px) {
@@ -302,7 +276,24 @@ h1 span {
   }
   .main-section-header {
     display: flex;
+    text-align: center;
     align-items: center;
+    padding-top: 40px;
+  }
+  .dog-img {
+    height: 500px;
+  }
+  .dog-img-container::before {
+    width: auto;
+    height: 350px;
+  }
+  .center-btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .col-span-2 {
+    grid-column: span 2;
   }
 }
 .category-section {
@@ -420,17 +411,26 @@ h1 span {
   .card-description-header {
     font-size: 16px;
   }
+  .card-header {
+    height: 200px;
+  }
+  .food-card {
+    padding: 15px 20px;
+  }
+  .dog-card {
+    padding: 0 10px;
+  }
 }
 .sale-poster-section {
-  display: flex;
-  flex-direction: row;
-  row-gap: 120px;
   background-color: #F9F3EC;
+  display: inline-flex;
+  gap: 120px;
+  width: 100%;
   padding: 37px 269px 27px 420px;
 }
 
 .poster-right-side {
-  padding: 184px 120px 184px 0;
+  padding: 184px 0 184px 0;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -454,32 +454,24 @@ h1 span {
   align-self: flex-start;
 }
 
-.poster-left-side {
-  width: 100%;
-  padding-top: 51px;
+.sale-poster-img {
+  padding: 0 50px 0 50px;
 }
 
-.ellipse-poster-section {
-  position: relative;
-  width: 648px;
-  min-height: 648px;
-  border-radius: 50%;
-  background-color: #f7eee4;
-  overflow: visible;
+@media (max-width: 850px) {
+  .sale-poster-section {
+    flex-direction: column;
+    row-gap: 0;
+    padding: 10px 20px;
+  }
+  .poster-right-side {
+    padding: 30px;
+    text-align: center;
+  }
+  .poster-sale {
+    font-size: 60px;
+  }
 }
-
-.ellipse-poster-section img {
-  position: absolute;
-  height: 669px;
-  width: 451px;
-  top: -81px;
-  left: 82px;
-  right: 115px;
-  bottom: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .blog-card-header {
   font-size: 26px;
   text-transform: capitalize;
@@ -493,12 +485,33 @@ h1 span {
   padding: 0 10px;
 }
 
+.inst-imgs-section img {
+  max-width: 100%;
+  height: auto;
+}
+
 .blog-description {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #908F8D;
 }
 
+.blog-posts-section .cards-container .card img {
+  max-width: 100%; /* Картинка будет сжиматься до 100% ширины родительского элемента */
+  height: auto; /* Сохранит пропорции при сжатии */
+}
+
+.blog-posts-section .cards-container {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 850px) {
+  .blog-posts-section .cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .register-section {
   display: flex;
   flex-direction: row;
@@ -565,6 +578,67 @@ h1 span {
   padding: 81px 0 382px 0;
 }
 
+@media (max-width: 850px) {
+  .register-form,
+  .register-section {
+    padding: 50px 20px;
+  }
+}
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 20px;
+  padding-top: 10px;
+  flex-wrap: wrap;
+}
+
+.enter-email-input {
+  border-radius: 50px;
+  background-color: white;
+  padding: 11px 31px;
+}
+
+.enter-email::-moz-placeholder {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #D9D9D8;
+}
+
+.enter-email::placeholder {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #D9D9D8;
+}
+
+.footer-menu {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: #908F8D;
+}
+
+.credentials {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 850px) {
+  .contact-icons {
+    justify-content: center;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer .logo-container {
+    justify-content: center;
+  }
+  .credentials {
+    display: flex;
+    flex-direction: column;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;

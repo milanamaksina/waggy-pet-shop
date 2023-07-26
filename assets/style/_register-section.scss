@@ -57,3 +57,11 @@
 .left-print {
     padding: 81px 0 382px 0;
 }
+
+
+@media (max-width: 850px) {
+    .register-form,
+    .register-section{
+        padding: 50px 20px;
+    }
+}

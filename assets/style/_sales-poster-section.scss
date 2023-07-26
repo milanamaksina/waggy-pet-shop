@@ -1,13 +1,13 @@
 .sale-poster-section {
-    display: flex;
-    flex-direction: row;
-    row-gap: 120px;
     background-color: $beige-100;
+    display: inline-flex;
+    gap: 120px;
+    width: 100%;
     padding: 37px 269px 27px 420px;
 }
 
 .poster-right-side {
-    padding: 184px 120px 184px 0;
+    padding: 184px 0 184px 0;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -31,27 +31,23 @@
     align-self: flex-start;
 }
 
-.poster-left-side {
-    width: 100%;
-    padding-top: 51px;
+.sale-poster-img{
+    padding: 0 50px 0 50px;
 }
 
-.ellipse-poster-section {
-    position: relative;
-    width: 648px;
-    min-height: 648px;
-    border-radius: 50%;
-    background-color: #f7eee4;
-    overflow: visible;
-}
+@media (max-width: 850px) {
+    .sale-poster-section{
+        flex-direction: column;
+        row-gap: 0;
+        padding: 10px 20px;
+    }
 
-.ellipse-poster-section img {
-    position: absolute;
-    height: 669px;
-    width: 451px;
-    top: -81px;
-    left: 82px;
-    right: 115px;
-    bottom: 0;
-    object-fit: cover;
+    .poster-right-side{
+        padding: 30px;
+        text-align: center;
+    }
+
+    .poster-sale{
+        font-size: 60px;
+    }
 }

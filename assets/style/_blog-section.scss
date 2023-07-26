@@ -11,8 +11,30 @@
     padding: 0 10px;
 }
 
-.blog-description{
+.inst-imgs-section img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.blog-description {
     font-family: $font-family-montserrat;
     font-size: 16px;
     color: $gray-400;
+}
+
+.blog-posts-section .cards-container .card img {
+    max-width: 100%; /* Картинка будет сжиматься до 100% ширины родительского элемента */
+    height: auto; /* Сохранит пропорции при сжатии */    
+}
+
+.blog-posts-section .cards-container {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+@media (max-width: 850px) {
+    .blog-posts-section .cards-container {
+        display: flex;
+        flex-direction: column;
+    }
 }
